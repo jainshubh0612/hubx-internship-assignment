@@ -1,0 +1,22 @@
+
+<div class="conatiner-fluid">
+    
+        <div class="conatiner col-md-12 row">
+           {{#each result}}
+            <div class="col-md-3 col-sm">
+                <div class="card" style="max-width:18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">{{this.eventName}}</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">{{this.eventGenre}} | {{this.eventDuration}}</h6>
+                      <p class="card-text">{{this.eventDescription}}</p>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Date: {{this.eventDate}}</li>
+                        <li class="list-group-item">Time: {{this.eventTime}}</li>
+                        <li class="list-group-item">Venue: {{this.eventVenue}}</li>
+                      </ul>
+                    </div>
+                  </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>

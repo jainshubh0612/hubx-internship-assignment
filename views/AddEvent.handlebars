@@ -1,0 +1,38 @@
+<form action="/add-event" method="POST">
+    <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="eventName">Event Name</label>
+      <input type="text" class="form-control" name="eventName" id="eventName" required>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="eventGenre">Event Genre</label>
+      <input type="text" class="form-control" name="eventGenre" id="eventGenre" required>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="eventDuration">Event Duration</label>
+      <input type="text" class="form-control" name="eventDuration" id="eventDuration" required>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="eventDate">Event Date</label>
+      <input type="text" class="form-control" name="eventDate" id="eventDate" required>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="eventTime">Event Time</label>
+      <input type="text" class="form-control" name="eventTime" id="eventTime" required>
+    </div>
+    {{!-- <div class="form-group col-md-2">
+      <label for="eventTime">Event Time</label>
+      <input type="text" class="form-control" name="eventTime" id="eventTime">
+    </div> --}}
+  </div>
+
+  <div class="form-group">
+    <label for="eventDescription">Event Description</label>
+    <input type="text" class="form-control" name="eventDescription" id="eventDescription" placeholder="Event Description" required>
+  </div>
+  <div class="form-group">
+    <label for="eventVenue">Event Venue</label>
+    <input type="text" class="form-control" name="eventVenue" id="eventVenue" placeholder="Event Venue...." required>
+  </div>
+  <button type="submit" class="btn btn-primary">Create Event</button>
+</form>
